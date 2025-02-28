@@ -1,0 +1,791 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 120px;
+}
+
+.rarsac-logo {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #3970b9;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons a {
+    font-size: 18px;
+}
+
+.icons a:hover {
+    color: #3970b9;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                linear-gradient(135deg, #3970b9, #b93939);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #111;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.product-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #111 !important;
+    margin: 15px 0;
+}
+
+.add-to-cart {
+    background-color: #111;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.add-to-cart:hover {
+    background-color: #3970b9;
+}
+
+/* Innovation Section */
+.innovation {
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+    background-color: #f0f0f0;
+}
+
+.innovation-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.innovation h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.innovation p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.learn-more {
+    background-color: #111;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.learn-more:hover {
+    background-color: #3970b9;
+}
+
+.innovation-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compression-animation {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Collection Preview */
+.collection-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 40px;
+}
+
+.collection-card {
+    width: 350px;
+    height: 250px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.collection-card:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                linear-gradient(135deg, #3970b9, #1e3d64);
+}
+
+.collection-card:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                linear-gradient(135deg, #b93939, #641e1e);
+}
+
+.collection-card:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                linear-gradient(135deg, #39b957, #1e6434);
+}
+
+.collection-card:hover {
+    transform: scale(1.05);
+}
+
+.collection-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.explore-button {
+    background-color: #fff;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.explore-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Subscription Section */
+.subscription {
+    background-color: #111;
+    color: #fff;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.subscription h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.subscription p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscription form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscription input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 16px;
+}
+
+.subscription button {
+    background-color: #3970b9;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 0 30px 30px 0;
+    font-size: 16px;
+}
+
+.subscription button:hover {
+    background-color: #2c5994;
+}
+
+/* Added modal styles */
+.checkout-modal, .confirmation-modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout-button {
+    background-color: #3970b9;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #2c5994;
+}
+
+.gift-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gift-code {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3970b9;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #edf5ff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.bonus-text {
+    color: #3970b9;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 60px 40px 20px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    width: calc(25% - 20px);
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #3970b9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-bottom ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-bottom a {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-bottom a:hover {
+    color: #3970b9;
+}
+
+/* Sustainable Development Page Styles */
+.page-header {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                linear-gradient(135deg, #4CAF50, #388E3C);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sustainable-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.sustainable-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sustainable-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #388E3C;
+}
+
+.sustainable-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sustainable-pillars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.pillar-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pillar-icon {
+    margin-bottom: 20px;
+}
+
+.pillar-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pillar-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.sustainable-impact {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sustainable-impact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #388E3C;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stat-card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #388E3C;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    color: #666;
+    font-size: 1rem;
+}
+
+.sustainable-future {
+    margin-bottom: 60px;
+}
+
+.sustainable-future h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #388E3C;
+    text-align: center;
+}
+
+.goals-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.goals-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.goal-check {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.goal-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.sustainable-partners {
+    text-align: center;
+}
+
+.sustainable-partners h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #388E3C;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logo {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .innovation {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .innovation-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .footer-column {
+        width: calc(50% - 20px);
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .sustainable-pillars, 
+    .impact-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pillar-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .featured-products,
+    .innovation,
+    .collection-preview,
+    .subscription {
+        padding: 60px 20px;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .subscription form {
+        flex-direction: column;
+    }
+    
+    .subscription input,
+    .subscription button {
+        border-radius: 30px;
+    }
+    
+    .subscription input {
+        margin-bottom: 10px;
+    }
+}

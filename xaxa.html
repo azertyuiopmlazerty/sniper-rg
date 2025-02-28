@@ -1,0 +1,152 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RARSac - Sacs WinRAR Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg viewBox="0 0 120 40" class="rarsac-logo">
+                <path d="M10,8 L35,8 L45,20 L35,32 L10,32 Z" fill="#000"/>
+                <text x="15" y="24" fill="#fff" font-size="14" font-weight="bold">RARSac</text>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#nouveautes">Nouveautés</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#apropos">À propos</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#recherche"><i class="fas fa-search"></i></a>
+            <a href="#panier"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>COMPRESSEZ VOS LIMITES</h1>
+            <p>Découvrez notre sac exclusif inspiré par WinRAR</p>
+            <button class="cta-button" onclick="scrollToProduct()">ACHETER MAINTENANT</button>
+        </div>
+    </section>
+
+    <section class="featured-products" id="product-section">
+        <h2>PRODUIT EXCLUSIF</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <svg viewBox="0 0 200 200" class="product-svg">
+                        <rect x="40" y="40" width="120" height="120" rx="10" fill="#3970b9"/>
+                        <path d="M50,50 L150,50 L150,150 L50,150 Z" fill="#5b8dd9"/>
+                        <path d="M60,60 L140,60 L140,140 L60,140 Z" fill="#80b2ff"/>
+                        <text x="75" y="110" fill="#fff" font-size="16">RAR</text>
+                    </svg>
+                </div>
+                <h3>RARSac Original</h3>
+                <p>Le sac ultime inspiré par la compression WinRAR</p>
+                <p class="price">10,00 €</p>
+                <button class="add-to-cart" id="buyButton">ACHETER MAINTENANT</button>
+                <p class="bonus-text">Inclus: Carte cadeau Amazon de 5€!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="innovation">
+        <div class="innovation-content">
+            <h2>INNOVATION RARSAC</h2>
+            <p>Notre technologie de compression révolutionnaire permet de stocker 200% plus d'affaires dans un espace 30% plus petit</p>
+        </div>
+        <div class="innovation-visual">
+            <div class="compression-animation" id="compressionAnimation"></div>
+        </div>
+    </section>
+
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Finaliser votre achat</h2>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Informations de paiement</label>
+                    <input type="text" id="payment" placeholder="Numéro de carte" required>
+                </div>
+                <button type="submit" class="checkout-button">PAYER 10,00 €</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="confirmation-modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeConfirmation">&times;</span>
+            <h2>Merci pour votre achat!</h2>
+            <p>Votre RARSac Original sera bientôt expédié.</p>
+            <div class="gift-card">
+                <h3>Votre carte cadeau Amazon de 5€</h3>
+                <div class="gift-code" id="giftCode"></div>
+                <p>Utilisez ce code sur Amazon.fr pour profiter de votre réduction de 5€</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h4>PRODUITS</h4>
+                <ul>
+                    <li><a href="#">RARSac Original</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>AIDE</h4>
+                <ul>
+                    <li><a href="#">Suivi de commande</a></li>
+                    <li><a href="#">Retours et remboursements</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>À PROPOS</h4>
+                <ul>
+                    <li><a href="#">Notre histoire</a></li>
+                    <li><a href="sustainable.html">Développement durable</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>SUIVEZ-NOUS</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 RARSac. Tous droits réservés.</p>
+            <ul>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
